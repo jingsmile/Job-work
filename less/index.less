@@ -1,0 +1,258 @@
+@import 'base.css';
+@import '111.css';
+@import 'yaoqing.css';
+@import 'xiaofei.css';
+@import 'index-zml.css';
+@import 'datainput.css';
+@import '111.css';
+@post:16px;
+header{
+	width: 100%;
+	height: 90px;
+	.logo{
+		width: 180px;
+		height: 90px;
+		.logo_img{
+			display: block;
+			width: 180px;
+			height: 90px;
+			background: url(../img/logo.png) no-repeat;
+			text-indent: -999em;
+		}
+	}
+	.bar{
+		width:1040px;
+		height: 90px;
+		position: relative;
+		.search{
+			width:424px;
+			height: 44px;
+			background: #f0f3fb;
+			border-radius: 3px;
+			margin-top:23px;
+			margin-left: 20px;
+			padding-left: 16px;
+			font-size: 14px;
+		}
+		.search_img{
+			width: 40px;
+			height: 40px;
+			background: url(../img/fangdajing.png) no-repeat;
+			position: absolute;
+			top: 25px;
+			left: 417px;
+		}
+		a{
+			color: #999999;
+			font-size: 16px;
+			font-family: 'Microsoft YaHei';
+		}
+		.recharge{
+			width: 52px;
+			height: 90px;
+			margin-left: 103px;
+			line-height: 90px;
+			padding-left: 48px; 
+			position: relative;
+		}
+		
+		.bar_active{
+			background: #f0f3fb;
+		}
+		.message{
+			width: 52px;
+			height: 90px;
+			line-height: 90px;
+			padding-left: 48px; 
+			position: relative;
+		}
+		.icon{
+			position: absolute;
+			left: 20px;
+			top: 35px;
+			width: 20px;
+			height: 22px;
+			background: url(../img/sprite1.png) no-repeat;
+		}
+		.pos20{
+			background-position: -20px 0px;
+		}
+		.icon2{
+			padding: 0 5px 0 5px;
+			background: #fa6460;
+			border-radius: 50%;
+			color: #fff;
+			font-size: 10px;
+			text-align: center;
+			line-height: 20px;
+			position: absolute;
+			top: 26px;
+			left: 30px;
+		}
+		.user{
+			width: 249px;
+			height: 40px;
+			margin-top: 25px;
+			line-height: 40px;
+			padding-left: 26px;
+		}
+	}
+}
+/*section*/
+section{
+	width: 100%;
+	height: 1141px;
+	position: relative;
+	nav{
+		position: absolute;
+		top: 0;
+		left: 0;
+		.big_menu{
+			width: 180px;
+			height: 1141px;
+			background: #2a303e;
+			color: #fff;
+			font-size: 16px;
+			font-family: 'Microsoft YaHei';
+			.big_li{
+				a{
+					height: 56px;
+					display: block;
+					line-height: 56px;
+					padding-left: 58px;
+					position: relative;
+					color: #fff;
+					.nav_icon{
+						width: 16px;
+						height: 16px;
+						background: url(../img/sprite2.png) no-repeat;
+						position: absolute;
+						top: 21px;
+						left: 30px;
+					}
+					.more{
+						width:10px;
+						height: 7px;
+						background:url(../img/more.png) no-repeat;
+						position: absolute;
+						top: 26px;
+						right: 40px;
+						transition:0.5s all ease;
+					}
+					.post0{
+						background-position: 0px -@post*0;
+					}
+					.post1{
+						background-position: 0px -@post*1;
+					}
+					.post2{
+						background-position: 0px -@post*2;
+					}
+					.post3{
+						background-position: 0px -@post*3;
+					}
+					.post4{
+						background-position: 0px -@post*4;
+					}
+					.post5{
+						background-position: 0px -@post*5;
+					}
+					.post6{
+						background-position: 0px -@post*6;
+					}
+					.post7{
+						background-position: 0px -@post*7;
+					}
+					.post8{
+						background-position: 0px -@post*8;
+					}
+				}
+				
+			}
+			.nav_active{
+				background:#296d8d;
+			}
+			.lt_menu{
+				transition:0.3s all ease-in;
+				overflow: hidden;
+				height: 0;
+				.lt_li{
+					a{
+						height: 56px;
+						display: block;
+						color: #fff;
+						line-height: 56px;
+						padding-left: 70px;
+						position: relative;
+						.circle{
+							position: absolute;
+							top: 25px;
+							left: 58px;
+							width: 4px;
+							height: 4px;
+							border-radius: 50%;
+							background: #fff;
+						}
+					}
+				}
+				.nav_lt_active{
+					background:#222632;
+				}
+			}
+		}
+	}
+	.contain{
+		width: 100%;
+		height: 1140px;
+		background: #e8ebf3;
+		border-top: 1px solid #ccc;
+		.tab{
+			width: 1000px;
+			margin-left: 199px;
+			margin-top: 20px;
+			.btn_menu{
+				width: 694px;
+				height: 45px;
+				.btn{
+					background: #fff;
+					width: 98px;
+					height: 44px;
+					border:1px solid #d3d8df;
+					border-bottom: none;
+					border-right: none;
+					border-radius: 5px 5px 0 0;
+					line-height: 44px;
+					text-align: center;
+					color: #999999;
+					font-size: 16px;
+					font-family: 'Microsoft YaHei';
+					cursor: pointer;
+				}
+				.last_btn{
+					border-right: 1px solid #d3d8df;
+				}
+				.tab_active{
+					background:#29a9db;
+					color: #fff;
+					border:1px solid #3eaae1;
+					border-right: none;
+				}
+			}
+			.contain_menu{
+				border-top:2px solid #3eaae1;
+				position: relative;
+				.page{
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: none;
+					background: #fff;
+				}
+				.contain_active{
+					display: block;
+				}
+			}
+		}
+	}
+}
